@@ -1,0 +1,26 @@
+name: Build & Deploy
+on:
+  push:
+    branches: [main]
+
+jobs:
+  # This workflow contains a single job called "build"
+  deploy:
+    name: Deploy
+    if: "!contains(github.event.commits.*.message, '[skip ci]')"
+    runs-on: ubuntu-latest
+    # 10 minutes for now as the test usually takes less than 5 minutes, can be changed later if needed
+    timeout-minutes: 10
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    env:
+      REPO: ${{ secrets.DOCKER_REPO }}
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build Docker image
+        run: docker build -t $REPO:latest .
+      - name: Generate ssh private key
+        run: echo "${{ secrets.SSH_PRIVATE_KEY }}" > ./id_ed25519 && chmod 700 ./id_ed25519
+      - name: Deploy docker image
+        run: docker save $REPO | ssh -o StrictHostKeyChecking=no -i ./id_ed25519 -p ${{ secrets.SSH_PORT }} -C ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} docker load
+      - name: Run update script
+        run: ssh -o StrictHostKeyChecking=no -i ./id_ed25519 -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} ${{ secrets.DEPLOY_COMMAND  }}

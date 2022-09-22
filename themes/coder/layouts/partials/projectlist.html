@@ -1,0 +1,19 @@
+<section class="container page">
+  <article>
+    <header>
+      <h1>{{ .Title }}</h1>
+    </header>
+    {{ with .Site.Params.projects }}
+    <ul class="project-list">
+      {{ range . }}
+      <li>
+        <a href="{{ .url | absLangURL }}">
+          <img src="{{ .icon | absURL }}" class="project-icon" rel="{{ .name }}" />
+          {{ .year }}| {{ .name }}
+        </a>
+      </li>
+      {{ end }}
+    </ul>
+    {{ end }}
+  </article>
+</section>

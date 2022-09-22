@@ -1,0 +1,24 @@
+{{ define "title" }}
+  {{ .Title }} · {{ .Site.Title }}
+{{ end }}
+
+{{ define "customCSS" }}
+    <link href="/style/chess.css" rel="stylesheet" />
+{{ end }}
+
+{{ define "content" }}
+<a href="/projects" id="homeLink" >Home</a>
+<div class="chess-container" id="chess2">
+  <div class="col-xs-3">
+      <h3> Eaten pieces</h3>
+      <div id="eaten"></div>
+  </div>
+  <div class="col-xs-3" id="board" style="color : black;"></div>
+  <div class="col-xs-3">
+      <h3> Moves</h3>
+      <div id="lst_coups"></div>
+  </div>
+</div>
+
+<script src="/script/chess.js" ></script>
+{{ end }}

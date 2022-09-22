@@ -1,0 +1,210 @@
+#chess2 {
+	margin: 0px auto 0px auto;
+}
+#board {
+	font-size: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: auto;
+	margin-top: auto;
+	width: 532px;
+	height: 532px;
+	flex-wrap: wrap;
+	padding: 0;
+	border: solid 10px #bc4a04;
+	display: flex;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+#board > div {
+	color: black;
+}
+#board div div {
+	font-size: 300%;
+	text-align: center;
+	z-index: 999;
+	cursor: pointer;
+}
+
+.col-xs-3 {
+	width: 200px;
+}
+
+.col-xs-3 h3 {
+	text-align: left;
+}
+
+div.content {
+	width: 90vw;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+}
+
+.chess-container {
+	width: 100vw;
+	display: flex;
+}
+
+main.wrapper footer {
+	position: fixed;
+	bottom: 20px;
+}
+
+main.wrapper {
+	max-height: 100vh;
+	height: 100vh;
+}
+
+#board .selectedBox {
+	border: 5px solid green;
+	cursor: pointer;
+}
+#board .threatBox {
+	border: 5px solid red;
+}
+#board .currentBox {
+	border: 5px dotted green;
+}
+#board .pieceBox {
+	cursor: pointer;
+}
+#board .begunBox {
+	background-color: red;
+}
+#board .Noir {
+	color: black;
+}
+#board .Blanc {
+	color: white;
+}
+#board .box {
+	font-size: 50px;
+	text-align: center;
+}
+#board .chessbox {
+	width: 64px;
+	height: 64px;
+	line-height: 1;
+}
+.white_box {
+	background-color: #5b0907;
+	border: 5px solid #5b0907;
+}
+.black_box {
+	background-color: #ecbe8c;
+	border: 5px solid #ecbe8c;
+}
+header {
+	height: 10vh;
+	margin-bottom: 5px;
+	border-bottom: 1px solid white;
+}
+footer {
+	height: 0px;
+	padding: 0;
+}
+#myModal {
+	color: black;
+}
+pre {
+	font-size: 1.2em;
+	font-family: 'Comfortaa', cursive;
+}
+#choose div {
+	border: 1px solid transparent;
+	cursor: pointer;
+}
+#choose div:hover {
+	border: 1px solid gray;
+}
+#lst_coups,
+#eaten {
+	font-size: 2em;
+	height: 70vh;
+	overflow-y: scroll;
+}
+#lst_coups > p {
+	width: 100%;
+}
+#eaten {
+	width: 90%;
+	word-wrap: break-word;
+	overflow-x: no-content;
+}
+#lst_coups > p:first-child {
+	background: #2eaccf;
+}
+.up_letter {
+	position: absolute;
+	width: 64px;
+	height: 16px;
+	text-align: center;
+	color: black;
+	font-size: 2em;
+}
+.side_number {
+	position: absolute;
+	width: 16px;
+	height: 64px;
+	text-align: center;
+	color: black;
+	font-size: 2em;
+}
+@media (max-width: 970px) {
+	#eaten,
+	#chess2 h3,
+	#lst_coups {
+		display: none;
+	}
+	#chess2 {
+		width: 100%;
+	}
+	#board {
+		left: 0;
+		bottom: 0;
+		margin: 0 auto;
+	}
+}
+body {
+	color: #fff;
+	font-size: 13px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+#main_container {
+	position: relative;
+	width: 100vw;
+	overflow-x: hidden;
+	height: 500px;
+}
+a {
+	color: #fff;
+	text-decoration: none;
+}
+.clr {
+	clear: both;
+}
+.content {
+	text-align: center;
+	position: relative;
+	width: 780px;
+	margin: 0 auto;
+}
+header {
+	background-color: rgba(255, 255, 255, 0.09);
+	margin: 0px;
+	padding: 5px;
+}
+header > h1 {
+	margin: 0px;
+}
+.row {
+	width: 100%;
+}

@@ -1,0 +1,13 @@
+{{ define "title" }}
+  {{ .Title }} · {{ .Site.Title }}
+{{ end }}
+
+{{ define "customCSS" }}
+    <link href="/style/cubesphere.css" rel="stylesheet" />
+{{ end }}
+
+{{ define "content" }}
+<a href="/projects" id="homeLink" >Home</a>
+<div id="infos" class="hidden">Rendering</div>
+<script src="/script/cubesphere.js" ></script>
+{{ end }}

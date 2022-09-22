@@ -1,0 +1,133 @@
+baseurl = "https://azariasb.eu/"
+title = "AzariasB"
+theme = "coder"
+languagecode = "en"
+defaultcontentlanguage = "fr"
+
+paginate = 20
+canonifyurls = true
+
+pygmentsstyle = "bw"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+
+[languages]
+    [languages.en]
+        weight = 1
+        contentDir = "content/en"
+        languageName = "English"
+        [languages.en.params]
+            info = "C.S. Engineer"
+            description = "Azarias's personnal website"
+        [[languages.en.params.social]]
+            name = "Github"
+            icon = "fab fa-github fa-2x"
+            weight = 1
+            url = "https://github.com/AzariasB/"
+        [[languages.en.params.social]]
+            name = "Linkedin"
+            icon = "fab fa-linkedin fa-2x"
+            weight = 2
+            url = "https://www.linkedin.com/in/azariasb/?locale=en_US"
+        [[languages.en.params.social]]
+            name = "Codewars"
+            icon = "fab codewars fa-2x"
+            weight = 2
+            url = "http://www.codewars.com/users/AzariasB"
+        [[languages.en.menu.main]]
+            name = "Projects"
+            weight = 3
+            url = "/en/projects/"
+
+    [languages.fr]
+        contentDir = "content/fr"
+        weight = 2
+        languageName = "Français"
+        [languages.fr.params]
+            info = "Ingénieur informatique"
+            description = "Site personnel d'Azarias"
+        [[languages.fr.params.social]]
+            name = "Github"
+            icon = "fab fa-github fa-2x"
+            weight = 1
+            url = "https://github.com/AzariasB/"
+        [[languages.fr.params.social]]
+            name = "Linkedin"
+            icon = "fab fa-linkedin fa-2x"
+            weight = 2
+            url = "https://www.linkedin.com/in/azariasb/?locale=fr_FR"
+        [[languages.fr.params.social]]
+            name = "Codewars"
+            icon = "fab codewars fa-2x"
+            weight = 2
+            url = "http://www.codewars.com/users/AzariasB"
+        [[languages.fr.menu.main]]
+            name = "Projets"
+            weight = 3
+            url = "/projects/"
+
+[params]
+    author = "Azarias Boutin"
+    info = "C.S. Engineer"
+    description = "Personnal website of Azarias"
+    keywords = "developer,personal,projects,french,english,solfeguido,qtypingtest,10fastfingers"
+    avatarurl = "images/profile.jpeg"
+
+    favicon_32 = "images/favicon.ico"
+    favicon_16 = "images/favicon.ico"
+
+    footercontent = ""
+
+    hidecredits = true
+    hidecopyright = false
+    copyright = "2018-2022"
+
+    rtl = false
+
+    math = true
+
+[[params.projects]]
+    name = "SolfeGuido"
+    url = "/projects/solfeguido/"
+    icon = "/images/solfeguido.png"
+    year = "2019-2021"
+[[params.projects]]
+    name = "QTypingTest"
+    url = "/projects/qtypingtest/"
+    icon = "/images/qttest.png"
+    year = "2016-2018"
+[[params.projects]]
+    name = "MultiplayerPong"
+    url = "/projects/multiplayerpong/"
+    icon = "/images/pong.png"
+    year = "2017-2019"
+[[params.projects]]
+    name = "10FastFingersCompetition"
+    url = "/projects/10fastfingerscompetition/"
+    icon = "/images/chrome.webp"
+    year = "2019"
+[[params.projects]]
+    name = "Dices"
+    url = "/projects/dices/"
+    icon = "/images/dices.png"
+    year = "2019"
+[[params.projects]]
+    name = "BigboyRace"
+    url = "/projects/bigboyrace/"
+    icon = "/images/bbrace.png"
+    year = "2018"
+[[params.projects]]
+    name = "CubeSphere"
+    url = "/projects/cubesphere/"
+    icon = "/images/smallfull.png"
+    year = "2016"
+[[params.projects]]
+    name = "MusicWave"
+    url = "/projects/musicwave/"
+    icon = "/images/music.png"
+    year = "2015"
+[[params.projects]]
+    name = "SimpleChess"
+    url = "/projects/simplechess/"
+    icon = "/images/pawn.png"
+    year = "2014"
