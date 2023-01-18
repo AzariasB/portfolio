@@ -80,7 +80,7 @@ pygmentscodefencesguesssyntax = true
 
     hidecredits = true
     hidecopyright = false
-    copyright = "2018-2022"
+    copyright = "2018-2023"
 
     rtl = false
 
