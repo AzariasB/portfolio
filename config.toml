@@ -87,6 +87,11 @@ pygmentscodefencesguesssyntax = true
     math = true
 
 [[params.projects]]
+    name = "Akimitsu"
+    url = "/projects/akimitsu/"
+    icon = "/images/akimitsu.webp"
+    year = "2021-"
+[[params.projects]]
     name = "SolfeGuido"
     url = "/projects/solfeguido/"
     icon = "/images/solfeguido.png"
