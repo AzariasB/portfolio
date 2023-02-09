@@ -6,10 +6,10 @@ draft: false
 
 ![Akimitsu](/images/akimitsu.webp)
 
-Akimitsu is a discord bot used by more than 9000 servers.
+Akimitsu est un bot discord utilisé par plus de 9000 serveurs.
 
-It uses typescript, redis, postgresql.
+La stack utilisée pour ce projet consiste principalement de typescript (nodejs), redis et postgreql.
 
-It has two sibling projects that I created, one in Kotlin, and one in rust : [bilderna](https://github.com/PixelaxFR/bilderna).
+Le projet comporte aussi deux frères : un créé en Kotlin et l'autre en rust : [bilderna](https://github.com/PixelaxFR/bilderna).
 
-[A summary of the bot's capacity](https://top.gg/bot/471749111125770250).
+[Une présentation sommaire du bot](https://top.gg/bot/471749111125770250).
