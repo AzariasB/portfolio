@@ -6,7 +6,7 @@ ADD . .
 
 RUN hugo
 
-FROM flashspys/nginx-static:latest
+FROM azariasb/nginx-static:latestflashspys
 
 RUN apk update && apk upgrade
 
